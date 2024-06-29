@@ -1,25 +1,105 @@
 * {
-    /* Não altere nada aqui dentro */
-    font-family: "Poppins", sans-serif;
+  /* Não altere nada aqui dentro */
+  font-family: "Poppins", sans-serif;
 
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--white);
 }
 
 body {
-    /* Não altere nada aqui dentro */
-    height: 100vh;
-    width: 100%;
+  /* Não altere nada aqui dentro */
+  height: 100vh;
+  width: 100%;
+
+  background-color: var(--black);
+  color: var(--white);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 :root {
-    /* Não altere nada aqui dentro */
-    --red: #A00000;
-    --blue: #0021D1;
-    --white: #FFFFFF;
-    --black: #030406;
+  /* Não altere nada aqui dentro */
+  --red: #a00000;
+  --blue: #0021d1;
+  --white: #ffffff;
+  --black: #030406;
 }
 
 /* Escreva a partir daqui */
+aside {
+  width: 20vw;
+  height: 100vh;
+}
+aside#sair {
+  margin-left: 0;
+  background-color: var(--red);
+  border-radius: 0 50% 50% 0;
+}
+aside#ficar {
+  margin-right: 0;
+  background-color: var(--blue);
+  border-radius: 50% 0 0 50%;
+}
+
+div {
+  width: 60vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a.vermelho,
+span.vermelho {
+  color: var(--red);
+}
+a.azul,
+span.azul {
+  color: var(--blue);
+}
+
+section#pilulas {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+}
+button {
+  border: none;
+  border-radius: 10px;
+  height: 50px;
+}
+#botao-vermelho,
+#botao-azul {
+  width: 40%;
+}
+#botao-vermelho {
+  background-color: var(--red);
+}
+#botao-azul {
+  background-color: var(--blue);
+}
+
+section#participantes button {
+  width: 100%;
+  background-color: var(--white);
+}
