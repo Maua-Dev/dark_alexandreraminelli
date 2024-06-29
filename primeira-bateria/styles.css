@@ -1,24 +1,108 @@
 * {
-    /* Não altere nada aqui dentro */
-    font-family: "Poppins", sans-serif;
+  /* Não altere nada aqui dentro */
+  font-family: "Poppins", sans-serif;
 
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
 }
 
 body {
-    /* Não altere nada aqui dentro */
-    height: 100vh;
-    width: 100%;
+  /* Não altere nada aqui dentro */
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
 }
 
 :root {
-    /* Não altere nada aqui dentro */
-    --gray: #1D1D1D;
-    --blue: #13E3FF;
-    --white: #FFFFFF;
+  /* Não altere nada aqui dentro */
+  --gray: #1d1d1d;
+  --blue: #13e3ff;
+  --white: #ffffff;
 }
 
 /* Escreva a partir daqui */
+a {
+  text-decoration: none;
+
+  color: var(--gray);
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: var(--blue);
+
+  padding: 30px;
+}
+
+main {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+
+  background-color: var(--gray);
+
+  padding-top: 100px;
+  padding-left: 75px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+}
+
+h1 {
+  text-transform: uppercase;
+  color: var(--blue);
+  font-size: 2rem;
+}
+
+h1,
+p {
+  text-align: center;
+}
+
+p {
+  font-size: 2.5rem;
+  color: var(--white);
+}
+
+aside button {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+
+  background-color: var(--blue);
+  color: var(--gray);
+
+  text-transform: uppercase;
+
+  border: none;
+  border-radius: 10px;
+
+  padding-bottom: 40px;
+}
+
+ul {
+  text-decoration: none;
+}
+li {
+  text-decoration: none;
+}
+
+#opcao-sair {
+  margin-top: 200px;
+}
